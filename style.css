@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.lottery-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.name-display {
+    font-size: 2.5em; /* 字体调大一点 */
+    font-weight: bold;
+    color: #d9534f; /* 名字颜色 */
+    border: 2px solid #eee;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    min-height: 60px; /* 保持一定高度 */
+    min-width: 250px; /* 保持一定宽度 */
+    display: inline-block; /* 让边框包裹内容 */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#drawButton {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #5cb85c; /* 按钮颜色 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#drawButton:hover {
+    background-color: #4cae4c; /* 鼠标悬停颜色 */
+}
+
+#drawButton:active {
+    transform: scale(0.98); /* 点击时轻微缩小 */
+}
+
+#drawButton:disabled {
+    background-color: #cccccc; /* 禁用时颜色 */
+    cursor: not-allowed;
+}
